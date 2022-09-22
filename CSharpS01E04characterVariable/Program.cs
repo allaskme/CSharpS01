@@ -44,6 +44,13 @@ namespace CSharpS01E04characterVariable
 
             // 在字符串中，如果需要引号，可以用两个引号连着写就可以了，而不是用\"，例如：
             string strTest2 = @"test1 say:""test2";
+
+            // 如何读取用户的输入数据，在控制台应用程序中，可以使用Console类的ReadLine()方法
+            string strInput = Console.ReadLine();
+            Console.WriteLine("读入的数据为：" + strInput);
+            // 输入数据时，要做到两点：1、变量类型和输入数据的类型一致；2、如果不一致需要转换，要确保右边的输入值小于左边变量类型的值范围，或者使用强制类型转换以忽略
+            // int a = Console.ReadLine();  //类型不一致，左边变量为int类型，右边为string类型，如果需要的话，可以改变左边的类型
+            
         }
     }
 }
