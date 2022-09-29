@@ -49,8 +49,15 @@ namespace CSharpS01E04characterVariable
             string strInput = Console.ReadLine();
             Console.WriteLine("读入的数据为：" + strInput);
             // 输入数据时，要做到两点：1、变量类型和输入数据的类型一致；2、如果不一致需要转换，要确保右边的输入值小于左边变量类型的值范围，或者使用强制类型转换以忽略
-            // int a = Console.ReadLine();  //类型不一致，左边变量为int类型，右边为string类型，如果需要的话，可以改变左边的类型
-            
+            //类型不一致，左边变量为int类型，右边为string类型，如果需要的话，可以改变左边的类型
+            // int a = Console.ReadLine();
+
+            // ReadLine()默认是读取的字符串，要想转换成其他的数据类型就需要调用Convert类下的相应方法
+            strInput = Console.ReadLine();
+            int strToInt = Convert.ToInt32(strInput);
+            // 此行是功能是将上面两行的合并写法，简洁高效
+            // int strToInt = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("输入的数字为：{0}",strToInt);
         }
     }
 }
