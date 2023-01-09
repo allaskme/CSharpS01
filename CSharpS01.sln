@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpS01E05CharacterPracti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpS01E15SortNumber", "CSharpS01E15SortNumber\CSharpS01E15SortNumber.csproj", "{9C7EA034-8521-46C6-AC72-50AB66B08F61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpS01E17Exercise", "CSharpS01E17Exercise\CSharpS01E17Exercise.csproj", "{CCAF0B72-AD88-4317-8E38-2348EE92A4CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpS01E17Exercise", "CSharpS01E17Exercise\CSharpS01E17Exercise.csproj", "{CCAF0B72-AD88-4317-8E38-2348EE92A4CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpS01E18While", "CSharpS01E18While\CSharpS01E18While.csproj", "{4BF94CC5-1819-491C-96E6-93732B39514E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{CCAF0B72-AD88-4317-8E38-2348EE92A4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCAF0B72-AD88-4317-8E38-2348EE92A4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCAF0B72-AD88-4317-8E38-2348EE92A4CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BF94CC5-1819-491C-96E6-93732B39514E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BF94CC5-1819-491C-96E6-93732B39514E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BF94CC5-1819-491C-96E6-93732B39514E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BF94CC5-1819-491C-96E6-93732B39514E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
