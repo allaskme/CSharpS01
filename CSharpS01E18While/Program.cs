@@ -42,6 +42,22 @@ namespace CSharpS01E18While
                 sum += i;
             }
             Console.WriteLine(sum);
+
+            int n = Convert.ToInt32(Console.ReadLine());
+            int m = Convert.ToInt32(Console.ReadLine());
+
+            while (true)
+            {
+                if(n<=m)
+                {
+                    if(n%2==0)
+                    {
+                        Console.WriteLine(n);
+                    }
+
+
+                }
+            }
         }
     }
 }
