@@ -63,6 +63,8 @@ namespace CSharpS01E19WhilePractice
             Console.WriteLine($"输入的{stuNumber}名学生的平均年龄是{(double)(1.0 * sumAge / stuNumber)}");
 
             // 输⼊⼀个整数n，输出1~n中的每个数，空格隔开。
+            Console.WriteLine("请输入一个要整行输出的数字");
+            input= Convert.ToInt32(Console.ReadLine());
         }
     }
 }

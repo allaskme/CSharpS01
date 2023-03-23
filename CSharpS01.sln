@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpS01E17Exercise", "CSh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpS01E18While", "CSharpS01E18While\CSharpS01E18While.csproj", "{4BF94CC5-1819-491C-96E6-93732B39514E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpS01E19WhilePractice", "CSharpS01E19WhilePractice\CSharpS01E19WhilePractice.csproj", "{22A106E5-5020-4A73-9499-5221D4159115}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpS01E19WhilePractice", "CSharpS01E19WhilePractice\CSharpS01E19WhilePractice.csproj", "{22A106E5-5020-4A73-9499-5221D4159115}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpS01E20Fro", "CSharpS01E20Fro\CSharpS01E20Fro.csproj", "{F578D060-54E3-4D2D-94E3-3742EB93C3FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{22A106E5-5020-4A73-9499-5221D4159115}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22A106E5-5020-4A73-9499-5221D4159115}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22A106E5-5020-4A73-9499-5221D4159115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F578D060-54E3-4D2D-94E3-3742EB93C3FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F578D060-54E3-4D2D-94E3-3742EB93C3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F578D060-54E3-4D2D-94E3-3742EB93C3FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F578D060-54E3-4D2D-94E3-3742EB93C3FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
