@@ -45,7 +45,26 @@
              * 随机输⼊⼀个整数num，输出⼀个新的数，新数恰好与原数每⼀位上的数字相反。（如果原数末尾有多个零，输出的新数⾼位不含0）
              * 样例输⼊ 8736 样例输出 6378
              * 样例输⼊2300 样例输出 32*/
+            n = Convert.ToInt32(Console.ReadLine());
+            m = n;
+            bool flag = true; //判断当前位置是不是0；
+            int tag = 1;
+            result = 0;
 
+            while (n>0)
+            {
+                int temp = n % 10;
+                if (temp == 0 && flag)
+                    n /= 10;
+                else
+                {
+                    flag = false;
+                    result *= 10;
+                    result += temp;
+                    n /= 10;
+                }
+            }
+            Console.WriteLine(result.ToString());
         }
     }
 }
