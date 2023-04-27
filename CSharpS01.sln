@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpS01E23ScopePractice2"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpS01E24ScopePractice3", "CSharpS01E24ScopePractice3\CSharpS01E24ScopePractice3.csproj", "{E5636434-68BF-4F8F-849D-A15B3402203B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpS01E25ScopePractice4", "CSharpS01E25ScopePractice4\CSharpS01E25ScopePractice4.csproj", "{639C3C9F-9EFD-48F2-9EE4-85A092398D8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpS01E25ScopePractice4", "CSharpS01E25ScopePractice4\CSharpS01E25ScopePractice4.csproj", "{639C3C9F-9EFD-48F2-9EE4-85A092398D8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpS01E26", "CSharpS01E26\CSharpS01E26.csproj", "{05C999FC-FCB6-48FF-96AD-B798830E71FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{639C3C9F-9EFD-48F2-9EE4-85A092398D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{639C3C9F-9EFD-48F2-9EE4-85A092398D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{639C3C9F-9EFD-48F2-9EE4-85A092398D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05C999FC-FCB6-48FF-96AD-B798830E71FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05C999FC-FCB6-48FF-96AD-B798830E71FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05C999FC-FCB6-48FF-96AD-B798830E71FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05C999FC-FCB6-48FF-96AD-B798830E71FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
