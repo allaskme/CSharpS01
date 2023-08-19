@@ -11,22 +11,22 @@
             int check = Convert.ToInt32(Console.ReadLine());
             int zhengxu = check;
             int result = 0;
-            bool flag = true;
+            //bool flag = true;
 
             while(check > 0)
             {
                 int temp = check % 10;
-                if (temp == 0 && flag)
+                /*if (temp == 0 && flag)
                 {
                     check /= 10;
                 }
                 else
-                {
-                    flag = false;
+                {*/
+                    //flag = false;
                     result *= 10;
                     result += temp;
                     check /= 10;
-                }
+                //}
             }
 
             if (result == zhengxu)
