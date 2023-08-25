@@ -44,6 +44,22 @@ namespace CSharpS01E30
              * ******* 
              */
             PrintStar3();
+
+            /*
+             * 编程题4
+             * 输入一个正整数d，输出d层的菱形
+             * 样例：
+             * 输入：4
+             * 输出：
+             *    *
+             *   ***
+             *  *****
+             * *******
+             *  *****
+             *   ***
+             *    *
+             */
+            PrintStar4();
         }
 
         static void PrintStar1()
@@ -134,6 +150,57 @@ namespace CSharpS01E30
                 Console.WriteLine();
             }
 
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+
+        static void PrintStar4()
+        {
+            Console.WriteLine("----------编程题4-----------");
+            Console.Write("输入一个正整数d:");
+            int d = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= d; i++)
+            {
+                for (int j = 0; j <= d - i; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 0; j < 2 * i - 1; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+            // 倒三角形，d-1行
+            // 方法1：我用的
+            /*for (int i = d - 1; i >= 1; i--)
+            {
+                for (int j = 1; j <= d - i + 1; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 2 * i - 1; j > 0; j--)
+                {
+                    Console.Write('*');
+                }
+                Console.WriteLine();
+            }*/
+
+            // 方法2：视频里的方法
+            for (int i = 1; i <= d - 1; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write(" ");
+                }
+                //d-1-i+1 = d-i
+                for (int j = 0; j < (d - i) * 2 - 1; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
             Console.WriteLine();
             Console.WriteLine();
         }
