@@ -25,7 +25,18 @@ namespace CSharpS01E33
              * 样例：
              * 23 23 23 45 56 213 4 5
              */
+            SwitchNumber();
 
+            /*
+             * 编程题4
+             * 有n(n<=100)个整数，已经按照从小到大顺序排列好，现在给另外一个整数x，请将该数插入到序列中，并使新的序列仍然有序
+             * 样例：
+             * 23 34 45 56 67 78 89 100
+             * 输入：58
+             * 输出：
+             * 23 34 45 56 58 67 78 89 100
+             */
+            InsertNumber();
         }
 
         static void MayDrinkCola()
@@ -57,7 +68,7 @@ namespace CSharpS01E33
             {
                 if (chars[i] >= 'a' && chars[i] <= 'z' || chars[i] >= 'A' && chars[i] <= 'Z')
                 {
-                    if (chars[i] >= 'x' && chars[i] <= 'z'|| chars[i] >= 'X' && chars[i] <= 'Z')
+                    if (chars[i] >= 'x' && chars[i] <= 'z' || chars[i] >= 'X' && chars[i] <= 'Z')
                     {
                         chars[i] = (char)(chars[i] - 23);
                     }
@@ -68,15 +79,122 @@ namespace CSharpS01E33
                 }
             }
 
-            foreach(char c in chars)
+            foreach (char c in chars)
             {
                 Console.Write(c);
             }
+
+            Console.WriteLine();
+            Console.WriteLine();
         }
 
         static void SwitchNumber()
         {
             Console.WriteLine("--------------编程题3：交换数字--------------");
+            Console.Write("请输入一组数字：");
+
+            string input = Console.ReadLine();
+            string[] strings = input.Split();
+            int[] ints = new int[strings.Length];
+
+            for (int i = 0; i < ints.Length; i++)
+            {
+                ints[i] = Convert.ToInt32(strings[i]);
+            }
+
+            int min = ints[0];
+            int index = 0;
+
+            for (int i = 0; i < ints.Length; i++)
+            {
+                if (ints[i] < min)
+                {
+                    min = ints[i];
+                    index = i;
+                }
+            }
+
+            int temp = ints[0];
+            ints[0] = min;
+            ints[index] = temp;
+
+            foreach (int i in ints)
+            {
+                Console.Write(i + " ");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+
+        static void InsertNumber()
+        {
+            Console.WriteLine("---------------编程题4：有序数列插入数据--------------");
+            Console.Write("请输入一组有序数列：");
+            string str = Console.ReadLine();
+            Console.Write("请输入一个要插入的数字：");
+            int newNumber = Convert.ToInt32(Console.ReadLine());
+            string[] strings = str.Split();
+            int[] ints = new int[strings.Length];
+            int[] newInts = new int[strings.Length + 1];
+
+            int index = 0;
+
+            //将字符数组转换为整数数组
+            for (int i = 0; i < ints.Length; i++)
+            {
+                ints[i] = Convert.ToInt32(strings[i]);
+            }
+
+            //查找位置并插入，重要的是判断！！
+            if (newNumber < ints[0])
+            {
+                newInts[0] = newNumber;
+                for (int i = 0; i < ints.Length; i++)
+                {
+                    newInts[i + 1] = ints[i];
+                }
+            }
+            else if (newNumber > ints[ints.Length - 1])
+            {
+                for (int i = 0;i < ints.Length;i++)
+                {
+                    newInts[i] = ints[i];
+                }
+                newInts[ints.Length] = newNumber;
+            }
+            else
+            {
+                for (int i = 0; i < ints.Length; i++)
+                {
+                    if (ints[i] <= newNumber && newNumber <= ints[i + 1])
+                    {
+                        index = i + 1;
+                        break;
+                    }
+                }
+
+                for (int i = 0;i < index; i++)
+                {
+                    newInts[i] = ints[i];
+                }
+
+                newInts[index] = newNumber;
+
+                for (int i = index; i < ints.Length; i++)
+                {
+                    newInts[i + 1] = ints[i];
+                }
+            }
+
+            //循环输出新数组
+            foreach (int i in newInts)
+            {
+                Console.Write(i + " ");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
         }
     }
 }
