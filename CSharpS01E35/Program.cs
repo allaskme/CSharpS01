@@ -61,20 +61,21 @@
             int maxDay = 0;
             int tempDay = 0;
 
-            for (int i = 0;i < sTemp.Length;i++)
+            for (int i = 0; i < sTemp.Length; i++)
             {
                 iTemperature[i] = Convert.ToInt32(sTemp[i]);
             }
 
-            for (int i = 0; i< iTemperature.Length - 1 ;i++)
+            for (int i = 0; i < iTemperature.Length - 1; i++)
             {
                 if (iTemperature[i + 1] > iTemperature[i])
                 {
                     tempDay += 1;
+                    maxDay = tempDay;
                 }
                 else
                 {
-                    if(maxDay < tempDay)
+                    if (maxDay < tempDay)
                     {
                         maxDay = tempDay;
                     }
