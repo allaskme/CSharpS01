@@ -8,6 +8,12 @@
              * 编程题：输入N个正整数，用空格分开，输出这N个数中第二大的数 
              */
             SecondNumber();
+
+            /*
+             * 编程题2：字符串中仅出现一次的字符
+             */
+            OnlyCharacter();
+
         }
 
         public static void SecondNumber()
@@ -64,7 +70,7 @@
             {
                 max = ints[1];
             }
-            
+
             // 从第三个数开始循环比较最大值和第二大值
             for (int i = 2; i < ints.Length; i++)
             {
@@ -81,6 +87,33 @@
             }
 
             Console.WriteLine($"最大值是{max},第二大值是{second}");
+        }
+
+        public static void OnlyCharacter()
+        {
+            Console.WriteLine("----------编程题：找出一组小写字符串中仅出现一次的字符------------");
+            Console.Write("请输入一串小写字符串：");
+            string inputS = Console.ReadLine();
+
+            bool isOnlyOne = true;
+
+            for (int i = 0; i < inputS.Length; i++)
+            {
+                for (int j = 0; j < inputS.Length; j++)
+                {
+                    if (inputS[i] == inputS[j])
+                    {
+                        isOnlyOne = false;
+                        break;
+                    }
+                }
+                if(isOnlyOne)
+                {
+                    Console.WriteLine($"{inputS[i]} is only one");
+                    break;
+                }
+            }
+
         }
     }
 }
