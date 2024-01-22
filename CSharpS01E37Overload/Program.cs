@@ -8,7 +8,8 @@
             Console.WriteLine(MaxValue(new int[] { 1, 3, 5, 6, 12, 14}));
             Console.WriteLine(MaxValue(new double[] { 2.2, 5.3, 4.7, 90.231 }));
         }
-
+        
+        //MaxValue为整型
         static int MaxValue(int[] ints)
         {
             int intMax = ints[0];
@@ -20,6 +21,7 @@
             return intMax;
         }
 
+        //MaxValue为浮点型
         static double MaxValue(double[] doubles)
         {
             double doubleMax = doubles[0];
